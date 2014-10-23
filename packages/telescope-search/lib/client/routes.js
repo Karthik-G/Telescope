@@ -12,6 +12,9 @@ Meteor.startup(function () {
       if ("q" in this.params) {
         Session.set("searchQuery", this.params.q);
       }
+       if ("author" in this.params) {
+        Session.set("searchQuery", this.params.author);
+      }
     }
   });
 
