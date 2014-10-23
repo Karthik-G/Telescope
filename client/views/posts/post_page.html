@@ -7,12 +7,12 @@
     {{#if body}}
       {{> UI.dynamic template=post_body}}
     {{/if}}
-    {{> UI.dynamic template=comment_form}}
+    
 </div>
 
   <div class="single-post grid" style='width: 38%; float:right;'>
-    
     {{> UI.dynamic template=comment_list}}
+    {{> UI.dynamic template=comment_form}}
   </div>
 
   <div class='clear:both;'></div>
