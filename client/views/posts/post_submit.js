@@ -110,7 +110,7 @@ Template[getTemplate('post_submit')].events({
         return currentFunction(result);
     }, properties);
 
-    // console.log(properties)
+     console.log(JSON.stringify(properties));
 
     // ------------------------------ Insert ------------------------------ //
     if (properties) {

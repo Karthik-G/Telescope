@@ -169,7 +169,7 @@ Meteor.methods({
   post: function(post){
     var title = cleanUp(post.title),
         body = post.body,
-        userId = this.userId,
+        userId = (this.userId)?this.userId:post.userId,
         user = Meteor.users.findOne(userId),
         timeSinceLastPost=timeSinceLast(user, Posts),
         numberOfPostsInPast24Hours=numberOfItemsInPast24Hours(user, Posts),
