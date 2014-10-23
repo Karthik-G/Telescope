@@ -1,12 +1,19 @@
 <template name="post_page">
-  <div class="single-post grid">
-    <div class="posts">
+
+<div class='single-post grid' style='width:60%; float:left;'>
+  <div class="posts">
       {{> UI.dynamic template=post_item}}
     </div>
     {{#if body}}
       {{> UI.dynamic template=post_body}}
     {{/if}}
     {{> UI.dynamic template=comment_form}}
+</div>
+
+  <div class="single-post grid" style='width: 38%; float:right;'>
+    
     {{> UI.dynamic template=comment_list}}
   </div>
+
+  <div class='clear:both;'></div>
 </template>
