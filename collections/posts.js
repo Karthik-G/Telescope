@@ -195,8 +195,8 @@ Meteor.methods({
       var postWithSameLink = Posts.findOne({url: post.url, postedAt: {$gte: sixMonthsAgo}});
 
       if(typeof postWithSameLink !== 'undefined'){
-        Meteor.call('upvotePost', postWithSameLink);
-        throw new Meteor.Error(603, i18n.t('This link has already been posted'), postWithSameLink._id);
+       // Meteor.call('upvotePost', postWithSameLink);
+        //throw new Meteor.Error(603, i18n.t('This link has already been posted'), postWithSameLink._id);
       }
     }
 
