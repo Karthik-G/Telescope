@@ -41,7 +41,7 @@ Schema.User = new SimpleSchema({
     type: Object,
     optional: true,
     blackbox: true
-  }
+  },
 });
 
 // Meteor.users.attachSchema(Schema.User);
