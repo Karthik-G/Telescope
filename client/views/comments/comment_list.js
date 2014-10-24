@@ -8,6 +8,15 @@ Template[getTemplate('comment_list')].helpers({
   },
   child_comments: function(){
     var post = this;
+    if(this.postsList!=undefined)
+      {
+                post=this.postsList.fetch()[0];
+
+      }
+       if((post==undefined)&&(xt!=undefined))
+      {
+         post=xt.fetch()[0];
+      }
     var comments = Comments.find({postId: post._id, parentCommentId: null}, {sort: {score: -1, postedAt: -1}});
     return comments;
   }
