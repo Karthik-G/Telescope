@@ -9,9 +9,11 @@ addToSettingsSchema = [];
 
 
 // array containing nav items; initialize with views menu and admin menu
-primaryNav = ['viewsMenu', 'adminMenu'];
+//primaryNav = ['viewsMenu', 'adminMenu'];
+primaryNav = ['adminMenu'];
 
-secondaryNav = ['userMenu', 'notificationsMenu', 'submitButton'];
+//secondaryNav = ['userMenu', 'notificationsMenu', 'submitButton'];
+secondaryNav = ['userMenu', 'notificationsMenu'];
 
 // array containing items in the admin menu
 adminNav = [];
