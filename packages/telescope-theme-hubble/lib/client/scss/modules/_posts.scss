@@ -497,11 +497,23 @@
     }
   }
  }
- 
+
  .posts .post .post-share, .posts .post .post-discuss {
     display: none;
 }
 
 .posts .post:first-child .post-share, .posts .post:first-child .post-discuss {
     display: block;
+}
+
+
+.post:first-child {
+/* background: rgba(119, 136, 153, 0.9); */
+    border: 4px solid #90EE90;
+    border-bottom: 0;
+}
+
+div.post:first-child + div.post-body {
+    border: 4px solid #90EE90;
+    border-top: none;
 }
