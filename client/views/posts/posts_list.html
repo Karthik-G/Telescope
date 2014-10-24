@@ -1,20 +1,21 @@
 <template name="posts_list">
   {{> UI.dynamic template=postsListIncoming data=incoming}}
-  <div class="posts-wrapper grid grid-module" style='width:60%; float:left;'>
+  <div class="posts-wrapper grid " style='width:60%; float:left;'>
     <div class="posts list">
       {{#each posts}}
-        
         {{> UI.dynamic template=post_item}}
-       
-      {{/each}}
+        {{> UI.dynamic template=post_body}}
+       {{/each}}
     </div>
     {{> UI.dynamic template=postsLoadMore}}
   </div>
   
-
   <div class="single-post grid" style='width: 38%; float:right;'>
 
     {{> UI.dynamic template=comment_list}}
     {{> UI.dynamic template=comment_form}}
+    
   </div>
+
+
 </template>
