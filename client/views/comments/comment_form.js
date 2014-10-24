@@ -33,7 +33,15 @@ Template[getTemplate('comment_form')].events({
       });
     }else{
       // root comment
-      var post = postObject;
+       var post = postObject;
+      if(postObject.postsList!=undefined)
+      {
+        post=postObject.postsList.fetch()[0];
+      }
+      if((post==undefined)&&(xt!=undefined))
+      {
+         post=xt.fetch()[0];
+      }
 
       Meteor.call('comment', post._id, null, content, function(error, newComment){
         if(error){
