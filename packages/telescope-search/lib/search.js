@@ -38,6 +38,8 @@ viewParameters.search = function (terms, baseParameters) {
       $or: [
         {title: {$regex: terms.query, $options: 'i'}},
         {url: {$regex: terms.query, $options: 'i'}},
+        {userId: {$regex: terms.query, $options: 'i'}},
+         {userid: {$regex: terms.query, $options: 'i'}},
         {body: {$regex: terms.query, $options: 'i'}}
       ]
     }
