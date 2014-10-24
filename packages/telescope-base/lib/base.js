@@ -115,10 +115,6 @@ postModules = [
     template: 'postContent', 
     position: 'center-center'
   },
-  {
-    template: 'postDiscuss',
-    position: 'right-right'
-  }
 ];
 
 postHeading = [
