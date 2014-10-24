@@ -1312,3 +1312,11 @@ a.mt-share-inline-square-sm {
 /* line 118, ../scss/modules/_share.scss */
 .mt-pinterest {
   background-color: #cc2127; }
+
+   .posts .post .post-share, .posts .post .post-discuss {
+    display: none;
+}
+
+.posts .post:first-child .post-share, .posts .post:first-child .post-discuss {
+    display: block;
+}

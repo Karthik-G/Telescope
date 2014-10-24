@@ -6,7 +6,12 @@ getEmbedlyData = function (url) {
   try {
     
     if(!embedlyKey)
-      throw new Error("Couldn't find an Embedly API key! Please add it to your Telescope settings.")
+    {
+      
+      embedlyKey="asdsdadsad";
+
+    }
+//      throw new Error("Couldn't find an Embedly API key! Please add it to your Telescope settings.")
 
     var result = Meteor.http.get(extractBase, {
       params: {

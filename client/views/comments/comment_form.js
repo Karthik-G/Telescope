@@ -43,6 +43,11 @@ Template[getTemplate('comment_form')].events({
          post=xt.fetch()[0];
       }
 
+       var x=Session.get('firstPost');
+       if(post ==undefined)
+       {
+        post=x;
+       }
       Meteor.call('comment', post._id, null, content, function(error, newComment){
         if(error){
           console.log(error);

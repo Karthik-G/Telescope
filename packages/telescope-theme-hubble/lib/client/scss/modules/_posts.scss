@@ -497,3 +497,11 @@
     }
   }
  }
+ 
+ .posts .post .post-share, .posts .post .post-discuss {
+    display: none;
+}
+
+.posts .post:first-child .post-share, .posts .post:first-child .post-discuss {
+    display: block;
+}
